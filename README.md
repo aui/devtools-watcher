@@ -1,5 +1,3 @@
-# devtools-watcher
-
 # devtools-watcher [![devtools-watcher](https://img.shields.io/npm/v/devtools-watcher.svg?colorB=green&label=devtools-watcher)](https://www.npmjs.com/package/devtools-watcher)
 
 ## Install
