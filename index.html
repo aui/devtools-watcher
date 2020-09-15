@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DevTools Watcher</title>
+        <script>
+            if (typeof module === 'undefined') {
+                window.module = {}
+            }
+        </script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <div id="log">DevTools: close(0)</div>
+        <script>
+            let counter = 0;
+            devToolsWatcher((open) => {
+                counter++;
+                if (open) {
+                    document.getElementById(
+                        'log'
+                    ).innerHTML = `DevTools: open(${counter})`;
+                } else {
+                    document.getElementById(
+                        'log'
+                    ).innerHTML = `DevTools: close(${counter})`;
+                }
+            });
+        </script>
+    </body>
+</html>
